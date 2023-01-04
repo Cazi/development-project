@@ -1,8 +1,10 @@
+import '../styles/CartStyle.css'
 import React from 'react'
-import ShoppingCart from './ShoppingCart'
-const Market = () => {
+function Market (cart, addCart) {
   return (
-    <div>Market</div>
+    <div className="market">
+      <button onClick={addCart}>Add Item 1</button>
+    </div>
   )
 }
 

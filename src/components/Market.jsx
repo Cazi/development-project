@@ -1,10 +1,18 @@
 import '../styles/MarketStyle.css'
-import React from 'react'
-function Market ({cart, addCart}) {
+import MarketItem from './MarketItem'
+import {marketData} from '../marketData'
+const Market = ({cart, addCart}) => {
   return (
     <div className="market">
       <span className="marketHeading">Market</span>
-      <button onClick={addCart}>Add Item 1</button>
+      {marketData.map((data, key) => {
+          return (
+            <div key={key}>
+              <MarketItem name={data.name} imageUrl={data.imgUrl} price={data.price} addCart={addCart}/>
+            </div>
+          );
+        })}
+      
     </div>
   )
 }

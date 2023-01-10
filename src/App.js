@@ -10,8 +10,8 @@ function App() {
     }
   return (
     <div className="App">
+       <Market cart={cart} addCart={addCart}/>
       <ShoppingCart cart={cart}/>
-      <Market cart={cart} addCart={addCart}/>
     </div>
   );
 }

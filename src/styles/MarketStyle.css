@@ -1,0 +1,18 @@
+.market {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    position: relative;
+    align-items: center;
+    border: solid 2px;
+    border-color: black;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.marketHeading {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 30px 0;
+    text-align: center;
+}

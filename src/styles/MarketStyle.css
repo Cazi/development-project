@@ -1,7 +1,7 @@
 .market {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 50%;
     position: relative;
     align-items: center;
     border: solid 2px;
@@ -19,10 +19,23 @@
 
 .marketItem {
     display: flex;
-    flex-direction: column;
-    position: relative;
+    flex-direction: row;
+    width: 90%;
+    height: 5%;
 
     border: solid 2px;
     border-color: black;
     border-radius: 5px;
+    margin: 5px;
+
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.marketItem img {
+    position: relative;
+    max-width: auto;
+    max-height: 60%;
 }

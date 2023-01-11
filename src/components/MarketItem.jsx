@@ -1,12 +1,13 @@
 import '../styles/MarketStyle.css'
 
-const MarketItem = ({name, imageUrl, price, addCart}) => {
+const MarketItem = ({ name, imageUrl, price, addCart }) => {
   return (
-    <div className="marketItem">
-        <span>{name}</span>
-        <span>{price}</span>
-        <button onClick={addCart}>Add Item 1</button>
-    </div>
+    <>
+      <img src={imageUrl} alt={name} />
+      <h3>{name}</h3>
+      <p>{price}</p>
+      <button onClick={addCart}>Add to Cart</button>
+    </>
   )
 }
 

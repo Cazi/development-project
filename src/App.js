@@ -6,7 +6,9 @@ import React, { useState } from 'react'
 function App() {
   const [cart, setCart] = useState(() => [])
     function addCart() {
-        setCart(prevCart => [...prevCart, 'item'])
+        // Change add cart so that it creates a cart item
+        setCart(prevCart =>
+          [...prevCart, 'item'])
     }
   return (
     <div className="App">

@@ -8,7 +8,7 @@ const Market = ({addCart}) => {
         {marketData.map((data, key) => {
           return (
             <div key={key} className="marketItem">
-              <MarketItem name={data.name} imageUrl={data.imgUrl} price={data.price} addCart={addCart} />
+              <MarketItem name={data.name} imageUrl={data.imgUrl} price={data.price} addCart={addCart} item={data}/>
             </div>
           );
         })}

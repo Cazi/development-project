@@ -27,13 +27,14 @@
 .cartItem {
   display: flex;
   flex-direction: row;
-  width: 90%;
+  width: 60%;
   height: 1%;
 
   border: solid 2px;
   border-color: black;
   border-radius: 5px;
   margin: 5px;
+  padding-left: 0px;
 
   align-items: center;
   justify-content: space-evenly;

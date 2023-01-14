@@ -1,4 +1,4 @@
-import '../styles/MarketStyle.css'
+
 
 const MarketItem = ({name, imageUrl, price, addCart, item}) => {
   return (

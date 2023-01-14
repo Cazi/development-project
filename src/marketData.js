@@ -1,7 +1,7 @@
 export const marketData = [
     {
         name: "Soul Eater Vol. 1",
-        imgUrl: 'images/soul eater.jpg',
+        imgUrl: './images/soul eater.jpg',
         price: 15.99
     },
     {

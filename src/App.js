@@ -6,15 +6,15 @@ import CartItem from './components/CartItem';
 
 function App() {
   const [cart, setCart] = useState(() => [])
+  const [total, setToal] = useState(0)
   function addCart(item) {
     // Change add cart so that it creates a cart item
-    setCart(prevCart =>
-      [...prevCart, CartItem(item)])
+    setCart([...cart, item])
   }
   return (
     <div className="App">
       <Market cart={cart} addCart={addCart} />
-      <ShoppingCart cart={cart} />
+      <ShoppingCart cart={cart} total={total} />
     </div>
   );
 }

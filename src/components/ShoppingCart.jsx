@@ -17,10 +17,12 @@ const ShoppingCart = ({ cart }) => {
         <div className='cart'>
             <span className="cartHeading"> Cart</span>
             {cart.map((item, key) => {
+                total += item.price;
                 return (
                     <CartItem item={item} key={key} />
                 )
             })}
+            <span>TOTAL: {total.toFixed(2)}</span>
             {console.log({countItems})}
         </div>
     );

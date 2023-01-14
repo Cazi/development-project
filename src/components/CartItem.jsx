@@ -5,7 +5,8 @@ const CartItem = (item, key) => {
     console.log({ item })
     return (
         <div key={key} className='cartItem'>
-            <img src={item.item.imageUrl} alt={item.item.name} />
+            {console.log(item.imageUrl)}
+            <img src={item.item.imgUrl} alt={item.item.name} />
             <h3>{item.item.name}</h3>
             <p>${item.item.price}</p>
         </div>

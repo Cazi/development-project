@@ -1,7 +1,7 @@
 .cart {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 40%;
   position: relative;
   align-items: center;
   border: solid 2px;

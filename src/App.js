@@ -11,14 +11,14 @@ function App() {
     // Change add cart so that it creates a cart item
     setCart([...cart, item])
   }
-  // function deleteItem(id) {
-  //   // Change add cart so that it creates a cart item
-  //   setCart(cart.filter(item => item.id != id))
-  // }
+  function deleteItem(thisItem) {
+    // Change add cart so that it creates a cart item
+    setCart(prevCart => prevCart.filter(item => thisItem.id != item.id))
+  }
   return (
     <div className="App">
       <Market cart={cart} addCart={addCart} />
-      <ShoppingCart cart={cart}/>
+      <ShoppingCart cart={cart} deleteItem={deleteItem}/>
     </div>
   );
 }

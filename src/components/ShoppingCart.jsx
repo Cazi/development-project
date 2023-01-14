@@ -1,29 +1,18 @@
 import '../styles/CartStyle.css'
 import CartItem from './CartItem';
+import { useState } from 'react';
 const ShoppingCart = ({ cart }) => {
     let total = 0;
-    function Counter(array) {
-        let count = {}
-        for (let index = 0; index < array.length; index++) {
-            if (array[index].name in count) {
-                count[array[index].name] += 1;
-            } else {
-                count[array[index].name] = 1;
-            }
-        }
-      }
-    let countItems = Counter(cart)
     return (
         <div className='cart'>
             <span className="cartHeading"> Cart</span>
             {cart.map((item, key) => {
                 total += item.price;
                 return (
-                    <CartItem item={item} key={key} />
+                    <CartItem item={item} key={key} quantity={1} />
                 )
             })}
             <span>TOTAL: {total.toFixed(2)}</span>
-            {console.log({countItems})}
         </div>
     );
 }

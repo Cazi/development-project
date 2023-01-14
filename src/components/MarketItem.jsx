@@ -1,5 +1,4 @@
 
-
 const MarketItem = ({name, imageUrl, price, addCart, item}) => {
   return (
     <>

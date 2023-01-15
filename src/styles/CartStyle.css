@@ -45,4 +45,5 @@
   position: relative;
   max-width: auto;
   max-height: 60%;
+  border: solid 2px;
 }

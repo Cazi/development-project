@@ -9,7 +9,7 @@ const ShoppingCart = ({ cart, deleteItem }) => {
             {cart.map((item, key) => {
                 total += item.price;
                 return (
-                    <CartItem item={item} key={key} deleteItem={() => deleteItem} />
+                    <CartItem item={item} key={key} deleteItem={deleteItem} />
                 )
             })}
             <span>TOTAL: {total.toFixed(2)}</span>
